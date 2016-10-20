@@ -1,0 +1,12 @@
+<div>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="n in view.data track by $index">
+      <h1>{{n.Title}}</h1>
+      <h2>{{n.Year}}</h2>
+      <h2>{{n.Type}}</h2>
+      <img ng-src="{{n.Poster}}" alt="">
+      <br>
+      <button ng-click="searchMovieById(n.imdbID)">More Detail</button>
+    </li>
+  </ul>
+</div>
